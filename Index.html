@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Monk</title>
+    <link href="Content/Css/MonkStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="timeOut" class="timeout">
+
+        <div class="centered">
+            <img id="monk-logo" class="floating" src="Content/Image/monk.png" />
+            <br /><br />
+            <div class="TextMonk text-Alight-Center pushToLeft">
+                <span class="moving2">Patience,</span><span class="moving">Young Padawan...</span>
+            </div>            
+        </div>
+        <div id="counter" class="Marketing">100</div>
+       
+    </div>
+    <div id="slider" class="monk">
+        <div class="sliderContainer">
+            <div id="slide0" class="dontShow">
+                <h1><u>WE ARE BREAKING<br /> OUR VOW <br /> OF SILENCE</u></h1>
+                <br /><br /><br /><br /><br /><br />
+                <div class="ExtraText">
+                    <p class="ExtraText">In January 2011 after a decade of digital, we opened the doors of our temple.</p>
+                    <p>Follow our noble eightfold path to digital enlightenment here</p>
+                </div>
+
+            </div>
+            <div id="slide1" class="dontShow">
+                <h1><u>Talent is Given <br /> true Skills is <br />Earned</u></h1>
+            </div>
+            <div id="slide2" class="dontShow">
+                <h1><u>Be Flexible to <br />Change and<br /> Sturdy in<br /> Conviction</u></h1>
+            </div>
+            <div id="slide3" class="dontShow">
+                <h1><u>Use Many skills <br />Yet Work As One</u></h1>
+            </div>
+            <div id="slide4" class="dontShow">
+                <h1><u>To Master <br />anything find<br /> intherest in <br />Everything</u></h1>
+            </div>
+            <div id="slide5" class="dontShow">
+                <h1><u>Individuals <br />Flourish<br />in Culture<br />and wisdom<br />are shared</u></h1>
+            </div>
+            <div id="slide6" class="dontShow">
+                <h1><u>Train for <br /> Perfection for <br />aim for more</u></h1>
+            </div>
+            <div id="slide7" class="dontShow">
+                <h1><u>Take Pride in your <br /> Work but do not <br />seek praise</u></h1>
+            </div>
+            <div id="slide8" class="dontShow">
+                <h1><u>Temporary <br />Sacrify Brings <br />Lasting Results</u></h1>
+            </div>
+            <div id="slide9" class="dontShow">
+                <h1><u>Become a Monk</u></h1>
+                <br /><br /><br />
+                <div class="ExtraTextMedia">
+                    <p>Interesting in joining our monastery?</p>
+                    <p>Check out our current openings on <u class="pointer" onclick="GoToMediaMonksCareers()">mediamonks.com/careers</u></p>
+                    <br />
+                    <div class="mediaIcons pointer">
+                        <a class="mailto" href="mailto:wesley@mediamonks.com">
+                            <span class="mediaIcons">
+                                <img id="mail-logo" class="mediaIconsDefault invert" src="Content/Image/svg/mail.svg" />
+                            </span>
+                            <span> Mails On</span>
+                        </a>   
+                        <span class="mediaIcons" onclick="GoToMediaMonksFacebook()"><img id="face-logo" class="mediaIconsDefault invert" src="Content/Image/svg/facebook.svg" /></span>
+                        <span onclick="GoToMediaMonksFacebook()"> Facebook</span>
+                        <span class="mediaIcons" onclick="GoToMediaMonksTwitter()"><img id="twitter-logo" class="mediaIconsDefault invert" src="Content/Image/svg/twitter.svg" /></span>
+                        <span class="mediaIcons" onclick="GoToMediaMonksTwitter()">Twitter</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="Slider-Controls">
+            <ul>
+                <li onclick="MoveSlider(0)"><</li>
+                <li onclick="MoveSlider(1)">1</li>
+                <li onclick="MoveSlider(2)">2</li>
+                <li onclick="MoveSlider(3)">3</li>
+                <li onclick="MoveSlider(4)">4</li>
+                <li onclick="MoveSlider(5)">5</li>
+                <li onclick="MoveSlider(6)">6</li>
+                <li onclick="MoveSlider(7)">7</li>
+                <li onclick="MoveSlider(8)">8</li>
+                <li onclick="MoveSlider(9)">></li>
+                <span id="indexText"></span>
+            </ul>
+        </div>
+        <div id="leftArrow" class="arrows" onclick="moveBackground('left')"><</div>
+        <div id="rightArrow" class="arrows" onclick="moveBackground('right')">></div>
+        <div class="Marketing" onclick="GoToMediaMonks()"><img id="MediaMonks-logo" class="pustToRight" src="Content/Image/mediamonks_logo_new.png" /></div>
+    </div>
+</body>
+<script src="Content/Script/MonkController.js"></script>
+</html>
